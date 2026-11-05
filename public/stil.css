@@ -1,0 +1,255 @@
+:root {
+  --ana-renk: #1e3a8a;
+  --ikincil-renk: #1d4ed8;
+  --arkaplan-renk: #f8fafc;
+  --kart-arkaplan: #ffffff;
+  --metin-renk: #0f172a;
+  --yardimci-metin: #334155;
+  --kenarlik-renk: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--arkaplan-renk);
+  color: var(--metin-renk);
+  line-height: 1.5;
+}
+
+.ust-bant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--ana-renk);
+  color: #ffffff;
+  padding: 16px 32px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.ana-icerik {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+.bolum {
+  margin-bottom: 36px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--ana-renk);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: var(--ana-renk);
+}
+
+.kontrol-paneli {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 24px;
+  background-color: var(--kart-arkaplan);
+  padding: 16px;
+  border: 1px solid var(--kenarlik-renk);
+  border-radius: 8px;
+}
+
+.arama-kutusu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.arama-kutusu label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.arama-kutusu input {
+  padding: 10px 12px;
+  border: 1px solid var(--kenarlik-renk);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.filtre-butonlari {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filtre-btn {
+  padding: 10px 16px;
+  border: 1px solid var(--ana-renk);
+  background-color: #ffffff;
+  color: var(--ana-renk);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.filtre-btn.secili {
+  background-color: var(--ana-renk);
+  color: #ffffff;
+}
+
+.kart-listesi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.kart {
+  background-color: var(--kart-arkaplan);
+  border: 1px solid var(--kenarlik-renk);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kart h3 {
+  font-size: 1.15rem;
+  color: var(--ana-renk);
+}
+
+.kart p {
+  color: var(--yardimci-metin);
+  font-size: 0.95rem;
+}
+
+.tur-etiketi {
+  align-self: flex-start;
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.bilgi-mesaji {
+  padding: 16px;
+  background-color: var(--kart-arkaplan);
+  border: 1px solid var(--kenarlik-renk);
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.form-bolumu {
+  background-color: var(--kart-arkaplan);
+  border: 1px solid var(--kenarlik-renk);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.form-satiri {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-satiri label {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.form-satiri input {
+  padding: 10px 12px;
+  border: 1px solid var(--kenarlik-renk);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.gonder-btn {
+  padding: 10px 24px;
+  background-color: var(--ana-renk);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gonder-btn:hover {
+  background-color: var(--ikincil-renk);
+}
+
+.hata {
+  margin-top: 12px;
+  color: #991b1b;
+  background-color: #fee2e2;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.basarili {
+  margin-top: 12px;
+  color: #166534;
+  background-color: #dcfce7;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.alt-bilgi {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--ana-renk);
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .ust-bant {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .kontrol-paneli {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filtre-butonlari {
+    justify-content: center;
+  }
+}

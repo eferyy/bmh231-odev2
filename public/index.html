@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bozok Kampüs Etkinlik Panosu</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <header class="ust-bant">
+    <div class="logo">Bozok Etkinlik</div>
+    <nav class="menu">
+      <a href="#etkinlik-bolumu">Etkinlikler</a>
+      <a href="#oneri-bolumu">Etkinlik Öner</a>
+    </nav>
+  </header>
+
+  <main class="ana-icerik">
+    <section id="etkinlik-bolumu" class="bolum">
+      <h1>Kampüs Etkinlik Panosu</h1>
+
+      <div class="kontrol-paneli">
+        <div class="arama-kutusu">
+          <label for="aramaInput">Etkinlik Ara</label>
+          <input type="text" id="aramaInput" placeholder="Başlığa göre ara...">
+        </div>
+
+        <div class="filtre-butonlari">
+          <button type="button" class="filtre-btn secili" data-tur="tumu">Tümü</button>
+          <button type="button" class="filtre-btn" data-tur="atolye">Atölye</button>
+          <button type="button" class="filtre-btn" data-tur="soylesi">Söyleşi</button>
+          <button type="button" class="filtre-btn" data-tur="topluluk">Topluluk</button>
+        </div>
+      </div>
+
+      <div id="kartListesi" class="kart-listesi"></div>
+    </section>
+
+    <section id="oneri-bolumu" class="bolum form-bolumu">
+      <h2>Etkinlik Öner</h2>
+      <form id="oneriFormu" novalidate>
+        <div class="form-satiri">
+          <label for="etkinlikAdi">Etkinlik Adı</label>
+          <input type="text" id="etkinlikAdi" name="etkinlikAdi" placeholder="Örn: Python Programlama Atölyesi">
+        </div>
+
+        <div class="form-satiri">
+          <label for="etkinlikTarihi">Tarih</label>
+          <input type="date" id="etkinlikTarihi" name="etkinlikTarihi">
+        </div>
+
+        <div class="form-satiri">
+          <label for="eposta">E-posta Adresi</label>
+          <input type="email" id="eposta" name="eposta" placeholder="ornek@bozok.edu.tr">
+        </div>
+
+        <button type="submit" class="gonder-btn">Gönder</button>
+        <p id="formMesaj"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="alt-bilgi">
+    <p>© 2026 Yozgat Bozok Üniversitesi Kampüs Etkinlik Panosu</p>
+  </footer>
+
+  <script src="betik.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "baslik": "Modern Web Programlama Atölyesi",
+    "tur": "atolye",
+    "tarih": "2026-11-14",
+    "yer": "Mühendislik-Mimarlık Fakültesi B-204 Lab",
+    "kontenjan": 35
+  },
+  {
+    "id": 2,
+    "baslik": "Bilişim ve Yazılım Topluluğu Tanışma Toplantısı",
+    "tur": "topluluk",
+    "tarih": "2026-11-17",
+    "yer": "Erdoğan Akdağ Kongre ve Kültür Merkezi",
+    "kontenjan": 150
+  },
+  {
+    "id": 3,
+    "baslik": "Yapay Zeka ve Savunma Sanayii Söyleşisi",
+    "tur": "soylesi",
+    "tarih": "2026-11-21",
+    "yer": "Mühendislik Fakültesi Konferans Salonu",
+    "kontenjan": 200
+  },
+  {
+    "id": 4,
+    "baslik": "Uygulamalı Git ve GitHub Atölyesi",
+    "tur": "atolye",
+    "tarih": "2026-11-25",
+    "yer": "Bilgisayar Mühendisliği B-201 Lab",
+    "kontenjan": 30
+  },
+  {
+    "id": 5,
+    "baslik": "Siber Güvenlik Kariyer Söyleşisi",
+    "tur": "soylesi",
+    "tarih": "2026-12-02",
+    "yer": "İİBF Konferans Salonu",
+    "kontenjan": 120
+  },
+  {
+    "id": 6,
+    "baslik": "Oyun Geliştirme Topluluğu Proje Günü",
+    "tur": "topluluk",
+    "tarih": "2026-12-08",
+    "yer": "Merkez Kütüphane Seminer Salonu",
+    "kontenjan": 80
+  }
+]
